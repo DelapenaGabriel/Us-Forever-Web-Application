@@ -27,7 +27,7 @@ public class JdbcPhotoDao implements PhotoDao{
     public List<Photo> getAllPhotos() {
         List<Photo> photos = new ArrayList<>();
 
-        String sql = "SELECT * FROM photos;";
+        String sql = "SELECT * FROM photos ORDER BY RANDOM();";
 
         try{
             SqlRowSet result = jdbcTemplate.queryForRowSet(sql);
@@ -44,7 +44,7 @@ public class JdbcPhotoDao implements PhotoDao{
     public List<Photo> getAllPhotosByCategory(String category) {
         List<Photo> photos = new ArrayList<>();
 
-        String sql = "SELECT * FROM photos WHERE category ILIKE ?;";
+        String sql = "SELECT * FROM photos WHERE category ILIKE ? ORDER BY RANDOM();";
 
         try{
             SqlRowSet result = jdbcTemplate.queryForRowSet(sql, category);

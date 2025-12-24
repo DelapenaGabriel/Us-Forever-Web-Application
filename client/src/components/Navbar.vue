@@ -41,7 +41,7 @@ const tracks = [
     artist: "Taylor Swift",
     cover:
       "https://m.media-amazon.com/images/M/MV5BZmExMDBiYjYtYjMyNi00N2Y2LThjNWYtOWVhYWE0Y2I1MzkxXkEyXkFqcGc@._V1_.jpg",
-    src: "./music/crazier.mp3",
+    src: "/music/crazier.mp3",
   },
   {
     title: "Obsession",
@@ -50,14 +50,22 @@ const tracks = [
     cover:
       "https://i.discogs.com/Wl2meVIab2RRUi_6DDVW88zQW9fwuzrLCyDqJdMTcQE/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjky/NjQtMTI4MTc3MTc5/NS5qcGVn.jpeg",
     // REPLACE with your actual mp3 file path (e.g., '/music/song.mp3')
-    src: "./music/obsession.mp3",
+    src: "/music/obsession.mp3",
   },
+  {
+    title: "Forever and Ever, Amen",
+    artist: "Randy Travis",
+    cover:
+      "https://i.ytimg.com/vi/KtKXc_v2iLE/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgTyhBMA8=&rs=AOn4CLD1TPhgVzHKHV3RcUYCvPIwpoXmmA",
+    src: "/music/foreverandever.mp3",
+  },
+
   {
     title: "What A God",
     artist: "SEU Worship",
     cover:
       "https://www.worshiptogether.com/media/qkcjxenw/what-a-god-seu-worship.jpeg?anchor=center&mode=crop&width=400&rnd=133929344350800000",
-    src: "./music/whatagod.mp3",
+    src: "/music/whatagod.mp3",
   }
 ];
 
@@ -398,7 +406,7 @@ onUnmounted(() => {
   .label {
     position: absolute;
     left: 70px;
-    background: #fbf1e8;
+    background: #fefdfb;
     color: #ff4757;
     font-weight: 700;
     padding: 5px 10px;
